@@ -142,3 +142,118 @@ footer {
   padding: 20px;
   color: #666;
 }
+
+.participants-section {
+  margin-top: 12px;
+  padding: 10px;
+  background-color: #eef2fa;
+  border-radius: 4px;
+  border: 1px solid #dde3f7;
+}
+
+.participants-section strong {
+  color: #3949ab;
+  display: block;
+  margin-bottom: 6px;
+}
+
+.participants-list {
+  list-style-type: disc;
+  margin-left: 22px;
+  margin-bottom: 0;
+  color: #333;
+  font-size: 15px;
+  margin-left: 0;
+  list-style-type: none;
+}
+
+.participant-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2px;
+}
+
+.delete-participant {
+  background: none;
+  border: none;
+  color: #c00;
+  cursor: pointer;
+  font-size: 1.2em;
+  margin-left: 8px;
+  padding: 0;
+}
+
+.remove-x {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: #c00;
+  transition: color 0.2s;
+}
+.delete-participant:hover .remove-x {
+  color: #900;
+}
+
+/* Custom alert box styles */
+.custom-alert {
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: rgba(0,0,0,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+}
+.custom-alert-content {
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.18);
+  padding: 2em 2.5em;
+  min-width: 320px;
+  max-width: 90vw;
+  text-align: center;
+  animation: popIn 0.2s;
+}
+.custom-alert-message {
+  font-size: 1.1em;
+  margin-bottom: 1.2em;
+}
+.custom-alert-actions button {
+  margin: 0 0.5em;
+  padding: 0.5em 1.2em;
+  border-radius: 5px;
+  border: none;
+  font-size: 1em;
+  cursor: pointer;
+  background: #eee;
+  transition: background 0.2s;
+}
+.custom-alert-confirm {
+  background: #c00;
+  color: #fff;
+}
+.custom-alert-cancel, .custom-alert-close {
+  background: #eee;
+  color: #333;
+}
+.custom-alert-confirm:hover {
+  background: #900;
+}
+.custom-alert-cancel:hover, .custom-alert-close:hover {
+  background: #ddd;
+}
+.custom-alert.error .custom-alert-content {
+  border: 2px solid #c00;
+}
+@keyframes popIn {
+  from { transform: scale(0.8); opacity: 0; }
+  to { transform: scale(1); opacity: 1; }
+}
+}
+
+.no-participants {
+  color: #888;
+  font-style: italic;
+  margin-left: 4px;
+  margin-bottom: 0;
+  font-size: 15px;
+}
